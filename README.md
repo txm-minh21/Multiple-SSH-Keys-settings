@@ -1,24 +1,24 @@
 # Multiple SSH Keys settings for different github account:
 
-# GEN key:
+## GEN key:
 ssh-keygen -t ed25519 -C "your_email@example.com"
 
-# Start the ssh-agent in the background:
+## Start the ssh-agent in the background:
 eval `ssh-agent -s`
 
-# Add key to identity:
+## Add key to identity:
 ssh-add ~/.ssh/id_YOUR_ID
 
-# Open id key public:
+## Open id key public:
 cat ~/.ssh/id_YOUR_ID.pub
 
-# Check list id:
+## Check list id:
 ssh-add -l
 
-# Delete id from identity:
+## Delete id from identity:
 ssh-add -d ~/.ssh/id_YOUR_ID
 
-# Config ssh key:
+## Config ssh key:
 use: nano ~/.ssh/config
 
 ```
@@ -35,11 +35,11 @@ User git
 IdentityFile ~/.ssh/id_txm_project
 ```
 
-# Git clone:
+## Git clone:
 git clone git@github-txm-minh21:txm-minh21/study-git.git
 git clone git@github-txm-minh:txm-minh/study-git.git
 
-# Config account:
+## Config account:
 git config user.name "your_usename"
 git config user.email "your-email@example.com"
 
