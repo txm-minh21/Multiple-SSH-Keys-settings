@@ -1,22 +1,40 @@
 # Multiple SSH Keys settings for different github account:
 
 ## GEN key:
+
+```
 ssh-keygen -t ed25519 -C "your_email@example.com"
+```
 
 ## Start the ssh-agent in the background:
+
+```
 eval `ssh-agent -s`
+```
 
 ## Add key to identity:
+
+```
 ssh-add ~/.ssh/id_YOUR_ID
+```
 
 ## Open id key public:
+
+```
 cat ~/.ssh/id_YOUR_ID.pub
+```
 
 ## Check list id:
+
+```
 ssh-add -l
+```
 
 ## Delete id from identity:
+
+```
 ssh-add -d ~/.ssh/id_YOUR_ID
+```
 
 ## Config ssh key:
 use: nano ~/.ssh/config
