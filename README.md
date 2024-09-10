@@ -36,10 +36,14 @@ IdentityFile ~/.ssh/id_txm_project
 ```
 
 ## Git clone:
+
+```
 git clone git@github-txm-minh21:txm-minh21/study-git.git
 git clone git@github-txm-minh:txm-minh/study-git.git
+```
 
 ## Config account:
+```
 git config user.name "your_usename"
 git config user.email "your-email@example.com"
-
+```
